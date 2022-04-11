@@ -1,14 +1,13 @@
-import './navlink.css'
+import '../styles/style.css';
 
 export const createNavlink = ({
-    label,
+    text,
     href,
     inNavbar = true,
 }) => {
     const navlink = document.createElement('a');
-    navlink.innerText = label;
+    navlink.innerText = text;
     navlink.href = href;
-
     const mode = inNavbar? 'navlink--navbar' : 'navlink--footer';
     navlink.className = ['navlink', mode].join(' ');
 
