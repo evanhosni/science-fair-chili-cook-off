@@ -1,8 +1,5 @@
 #title {
+    @include flexCenter(column);
     height: 90vh;
     color: $darkBlue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }

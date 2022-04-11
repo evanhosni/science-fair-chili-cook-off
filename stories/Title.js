@@ -27,7 +27,7 @@ export const createTitle = () => {
 
     window.addEventListener("scroll", () => {
         let offset = window.pageYOffset;
-        title.style.backgroundPositionY = offset * 0.7 + 'px';
+        title.style.backgroundPositionY = offset * 0.6 + 'px';
     })
 
     return title

@@ -1,0 +1,20 @@
+.microscope {
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 50%;
+    cursor: none;
+    width: 20vw;
+    height: 20vw;
+}
+
+.magnifiable {
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (min-width: $breakpoint) {
+    .microscope {
+        width: 10vw;
+        height: 10vw;
+    }
+}
