@@ -1,0 +1,14 @@
+section {
+    background-color: gray;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: $offWhite;
+    }
+    div {
+        display: flex;
+    }
+}

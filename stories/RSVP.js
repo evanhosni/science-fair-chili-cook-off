@@ -7,5 +7,12 @@ export const createRSVP = () => {
     rsvp.id = 'rsvp'
     rsvp.appendChild(createHeader({ text: 'RSVP' }))
 
+    const content = document.createElement('div')
+    content.appendChild(createParagraph({ text:
+        "the 50th annual blah blah blah where contestants blah blah"
+    }))
+
+    rsvp.appendChild(content)
+
     return rsvp;
 }

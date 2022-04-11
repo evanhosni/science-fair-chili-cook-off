@@ -1,5 +1,9 @@
 nav {
     background-color: $redBrown;
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }

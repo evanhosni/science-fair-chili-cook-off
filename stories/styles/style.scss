@@ -3,8 +3,14 @@
     padding: 0;
 }
 
+//import variables
 @import './variables';
-@import './navbar';
+
+//import components
 @import './navlink';
+@import './parallax';
+
+//import sections
+@import './navbar';
 @import './title';
-@import './parallaximage';
+@import './section';
