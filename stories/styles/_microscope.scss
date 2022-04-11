@@ -10,7 +10,14 @@
 .magnifiable {
     position: relative;
     width: 100%;
+    z-index: 2;
 }
+
+// .frontDiv {
+//     position: relative;
+//     width: 100%;
+//     z-index: 5;
+// }
 
 @media screen and (min-width: $breakpoint) {
     .microscope {
