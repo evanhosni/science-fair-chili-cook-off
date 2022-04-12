@@ -1,11 +1,17 @@
 #title {
+    div {
+        padding-top: 18vh;
+    }
     @include flexCenter(column);
+    justify-content: start;
     height: 95vh;
-    color: $darkBlue;
     text-align: center;
     transition: background-image 2s;
+    h1 {
+        color: $darkBlue;
+    }
     h3 {
-        padding-bottom: 30vh;
+        color: $darkBlue;
     }
 }
 

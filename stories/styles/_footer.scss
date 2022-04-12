@@ -1,0 +1,6 @@
+#footer {
+    @include flexCenter(row);
+    justify-content: space-around;
+    background-color: black;
+    min-height: 80px;
+}

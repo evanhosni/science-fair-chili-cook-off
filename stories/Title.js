@@ -18,13 +18,15 @@ export const createTitle = () => {
 
     const h1 = document.createElement('h1')
     h1.innerHTML = 'Science Fair<br><span id="title-chili">Chili</span><br>Cook-Off'
-    
+
     const h3 = document.createElement('h3')
     h3.innerText = '2022'
 
-    title.appendChild(logo)
-    title.appendChild(h1)
-    title.appendChild(h3)
+    const titleContainer = document.createElement('div')
+    titleContainer.appendChild(logo)
+    titleContainer.appendChild(h1)
+    titleContainer.appendChild(h3)
+    title.appendChild(titleContainer)
 
     const slideshow = [banner1, banner2]
     title.style.backgroundImage = `url(${slideshow[0]})`
@@ -37,6 +39,7 @@ export const createTitle = () => {
     window.addEventListener('scroll', () => {
         let offset = window.pageYOffset;
         title.style.backgroundPositionY = offset * 0.6 + 'px';
+        titleContainer.style.paddingTop = 18 + offset * 0.04 + 'vh';
     })
 
     return title

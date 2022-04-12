@@ -1,0 +1,25 @@
+#rsvp {
+    div {
+        max-width: 1500px;
+        flex-direction: column-reverse;
+        #form {
+            text-align: center;
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #rsvp {
+        div {
+            flex-direction: row;
+            justify-content: space-around;
+            #form {
+                width: 50%;
+            }
+            div {
+                width: 50%;
+            }
+        }
+    }
+}

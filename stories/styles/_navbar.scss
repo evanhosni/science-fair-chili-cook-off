@@ -1,11 +1,9 @@
 nav {
+    @include flexCenter(row);
     background-color: $redBrown;
     position: fixed;
     z-index: 2;
     width: 100%;
     min-height: 80px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     box-shadow: black 0 0 25px;
 }

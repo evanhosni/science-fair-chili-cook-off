@@ -1,12 +1,25 @@
 .navlink {
-    margin: 10px 40px;
-    padding: 5px;
+    margin: 10px 2vw;
+    padding: 5px 5px;
 }
 
 .navlink--navbar {
-    color: $offWhite
+    color: $offWhite;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.5s, padding 0.5s;
+    &:hover {
+        color: $yellowish;
+        border-bottom: 3px solid $yellowish;
+        padding: 10px 15px;
+    }
 }
 
 .navlink--footer {
-    color: red
+    color: gray;
+    text-decoration: none;
+    transition: padding 0.5s;
+    &:hover {
+        color: $yellowish;
+    }
 }

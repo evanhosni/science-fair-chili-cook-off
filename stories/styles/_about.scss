@@ -1,9 +1,31 @@
 #about {
     div {
-        width: 60%;
-        img {
-            padding: 50px;
-            height: 20em
+        max-width: 1500px;
+        flex-direction: column-reverse;
+        p {
+            text-align: center;
+            width: 80%;
+        }
+        div {
+            iframe {
+                max-width: 80vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #about {
+        div {
+            flex-direction: row;
+            justify-content: space-around;
+            p {
+                text-align: right;
+                width: 50%;
+            }
+            div {
+                width: 50%;
+            }
         }
     }
 }

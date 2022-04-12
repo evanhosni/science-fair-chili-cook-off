@@ -5,6 +5,7 @@ section {
     box-shadow: black 0 0 25px;
     div {
         @include flexCenter(row);
+        padding: 2vw;
         width: 80%;
     }
 }
