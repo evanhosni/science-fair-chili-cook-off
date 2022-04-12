@@ -18,9 +18,9 @@ export const createContestants = () => {
     contestants.appendChild(createHeader({ text: 'Contestants' }))
 
     const content = document.createElement('div')
-    content.appendChild(createCard({ imgSrc: chili1, imgAlt: 'chili', gifSrc: nanobots, gifAlt: 'nanobots', text: "Nanobot technology sure has come a long way. This synthetic chili taps into your hippocampus to retrieve all those nostalgic memories..." }))
-    content.appendChild(createCard({ imgSrc: chili2, imgAlt: 'chili', gifSrc: mitosis, gifAlt: 'mitosis', text: "Contestant #2 chose to use only the freshest, wholest of ingredients. We're talking pre-cell division stuff. Talk about organic!" }))
-    content.appendChild(createCard({ imgSrc: chili3, imgAlt: 'chili', gifSrc: fetal_neurons, gifAlt: 'fetal neurons', text: "A new twist on GMOs, this chili blah blah blah. Anyways take a bite and let me know what you think." }))
+    content.appendChild(createCard({ imgSrc: chili1, imgAlt: 'chili', gifSrc: nanobots, gifAlt: 'nanobots', header: 'Chili Con Nanobot', paragraph: "Nanobot technology sure has come a long way. This synthetic chili taps into your hippocampus to retrieve all those nostalgic memories..." }))
+    content.appendChild(createCard({ imgSrc: chili2, imgAlt: 'chili', gifSrc: mitosis, gifAlt: 'mitosis', header: 'Mitosis Gumbo', paragraph: "Contestant #2 chose to use only the freshest, wholest of ingredients. We're talking pre-cell division stuff. Talk about organic!" }))
+    content.appendChild(createCard({ imgSrc: chili3, imgAlt: 'chili', gifSrc: fetal_neurons, gifAlt: 'fetal neurons', header: 'Vegetarian Psuedoscience', paragraph: "A new twist on GMOs, this chili blah blah blah. Anyways take a bite and let me know what you think." }))
 
     contestants.appendChild(content)
 

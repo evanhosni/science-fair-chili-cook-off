@@ -1,6 +1,10 @@
+//import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Nunito:wght@600;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 //import variables
@@ -9,6 +13,8 @@
 
 //import components
 @import './navlink';
+@import './header';
+@import './paragraph';
 @import './parallax';
 @import './card';
 @import './microscope';
@@ -18,3 +24,4 @@
 @import './title';
 @import './section';
 @import './contestants';
+@import './about';

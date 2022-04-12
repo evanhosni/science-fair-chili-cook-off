@@ -1,5 +1,18 @@
 #title {
     @include flexCenter(column);
-    height: 90vh;
+    height: 95vh;
     color: $darkBlue;
+    text-align: center;
+    transition: background-image 2s;
+    h3 {
+        padding-bottom: 30vh;
+    }
+}
+
+#title-chili {
+    font-family: 'Grape Nuts', cursive;
+}
+
+#logo {
+    width: 150px;
 }

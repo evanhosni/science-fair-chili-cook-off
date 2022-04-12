@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Nunito:wght@600;800&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 .navlink {
-  font-family: 'Courier New', Courier, monospace;
   margin: 10px 40px;
   padding: 5px;
 }
@@ -15,6 +16,21 @@
 
 .navlink--footer {
   color: red;
+}
+
+h1 {
+  color: #fcffd3;
+  font-size: xx-large;
+}
+
+h2 {
+  color: #fcffd3;
+  margin: auto;
+}
+
+p {
+  color: #fcffd3;
+  font-size: larger;
 }
 
 .parallax-bg {
@@ -94,6 +110,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: black 0 0 25px;
+          box-shadow: black 0 0 25px;
 }
 
 #title {
@@ -110,8 +128,23 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
+  height: 95vh;
   color: #1c5d99;
+  text-align: center;
+  -webkit-transition: background-image 2s;
+  transition: background-image 2s;
+}
+
+#title h3 {
+  padding-bottom: 30vh;
+}
+
+#title-chili {
+  font-family: 'Grape Nuts', cursive;
+}
+
+#logo {
+  width: 150px;
 }
 
 section {
@@ -128,16 +161,13 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: gray;
-  min-height: 50vh;
-}
-
-section h1 {
-  color: #fcffd3;
+  padding: 70px 0 100px;
+  background-color: #242424;
+  -webkit-box-shadow: black 0 0 25px;
+          box-shadow: black 0 0 25px;
 }
 
 section div {
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,11 +181,13 @@ section div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
 }
 
 #contestants {
   height: 100%;
-  padding: 100px 0;
+  -webkit-box-shadow: inset 0 25px 25px -25px black;
+          box-shadow: inset 0 25px 25px -25px black;
 }
 
 #contestants div {
@@ -173,5 +205,14 @@ section div {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+}
+
+#about div {
+  width: 60%;
+}
+
+#about div img {
+  padding: 50px;
+  height: 20em;
 }
 /*# sourceMappingURL=style.css.map */

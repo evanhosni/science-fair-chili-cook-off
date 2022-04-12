@@ -1,4 +1,5 @@
 import '../styles/style.css';
+import { createHeader } from './Header';
 import { createParagraph } from './Paragraph';
 
 export const createCard = ({
@@ -6,7 +7,8 @@ export const createCard = ({
     imgAlt,
     gifSrc,
     gifAlt,//TODO: figure out how to include alt on background elements
-    text,
+    header,
+    paragraph,
 }) => {
     const card = document.createElement('div')
     card.className = 'card'
@@ -20,7 +22,8 @@ export const createCard = ({
 
     container.appendChild(image)
     card.appendChild(container)
-    card.appendChild(createParagraph({ text: text }));
+    card.appendChild(createHeader({text: header, primary: false}))
+    card.appendChild(createParagraph({ text: paragraph }));
 
     image.addEventListener('mouseover', () => {
         //remove old/duplicate microscopes
@@ -28,6 +31,7 @@ export const createCard = ({
 
         var glass, w, h, borderWidth;
         var zoom = 2;
+
         
         //create microscope
         glass = document.createElement('div');
