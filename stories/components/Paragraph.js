@@ -4,7 +4,7 @@ export const createParagraph = ({
     text,
 }) => {
     const paragraph = document.createElement('p')
-    paragraph.innerText = text
+    paragraph.innerHTML = text
 
     return paragraph;
 }

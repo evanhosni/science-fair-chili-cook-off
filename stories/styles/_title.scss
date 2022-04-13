@@ -1,24 +1,46 @@
 #title {
     div {
-        padding-top: 18vh;
+        padding-top: 0vh;
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
     }
     @include flexCenter(column);
     justify-content: start;
     height: 95vh;
     text-align: center;
     transition: background-image 2s;
-    h1 {
-        color: $darkBlue;
+    text-shadow: black 0 0 8px;
+    img {
+        width: 8em;
+        opacity: 0.8;
+        margin-bottom: -10px;
     }
     h3 {
-        color: $darkBlue;
+        color: white;
     }
+}
+
+#title-science-fair {
+    -webkit-text-stroke: 2px black;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.5em;
+    color: white;
 }
 
 #title-chili {
     font-family: 'Grape Nuts', cursive;
+    font-size: 1.8em;
+    color: red;
+    text-shadow: black 0 0 5px;
+    line-height: 0.8;
 }
 
-#logo {
-    width: 150px;
+#title-cook-off {
+    color: $yellowish;
+    line-height: 0.5;
+    font-size: 0.8em;
 }

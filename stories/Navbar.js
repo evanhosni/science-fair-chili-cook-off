@@ -10,7 +10,7 @@ export const createNavbar = () => {
 
 
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 600) {
+        if (window.pageYOffset > 200) {
             navbar.style.backgroundColor = "rgb(116, 47, 45)";
             navbar.style.boxShadow = "black 0 0 25px"
         } else {

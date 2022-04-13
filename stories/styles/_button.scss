@@ -4,8 +4,15 @@ button {
     padding: 5px 10px;
     border-radius: 20px;
     border: solid black 2px;
-    background-color: rgb(170, 170, 170);
+    background-color: $lightGray;
     color: black;
-    box-shadow: #000000 0 0 5px;
+    box-shadow: black 0 0 5px;
     margin: 10px 0;
+    &:hover {
+        background-color: $redBrown;
+        cursor: pointer;
+    }
+    &:active {
+        opacity: 0.8;
+    }
 }

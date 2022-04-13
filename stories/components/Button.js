@@ -1,10 +1,12 @@
 import '../styles/style.css';
 
 export const createButton = ({
+    id,
     text,
 }) => {
-    const Button = document.createElement('button')
-    Button.innerText = text
+    const button = document.createElement('button')
+    button.id = id
+    button.innerText = text
 
-    return Button;
+    return button;
 }

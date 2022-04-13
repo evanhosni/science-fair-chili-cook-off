@@ -1,6 +1,7 @@
 label {
     @extend p;
-    color: white;
+    color: $lightGray;
+    opacity: 0.8;
     font-size: x-large
 }
 

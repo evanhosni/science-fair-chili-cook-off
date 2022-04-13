@@ -16,7 +16,7 @@ export const createRSVP = () => {
 
     formContainer.appendChild(createHeader({ text: 'RSVP' }))
     formContainer.appendChild(form)
-    formContainer.appendChild(createButton({ text: 'Submit' }))
+    formContainer.appendChild(createButton({ id: 'submit', text: 'Submit' }))
 
     const mapContainer = document.createElement('div')
     mapContainer.id = 'map'
@@ -27,7 +27,7 @@ export const createRSVP = () => {
         loading="lazy"
         allowfullscreen
         referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Santiago,Chile">
+        src="https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Chile">
     </iframe>`
 
     rsvp.appendChild(formContainer)

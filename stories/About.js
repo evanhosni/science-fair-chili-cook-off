@@ -13,7 +13,7 @@ export const createAbout = () => {
     video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/rPimn229Ezg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     
     content.appendChild(createParagraph({ text:
-        "lorem bingus waffle fries and hummus and anyways check me out my name pierce lorem bingus waffle fries and hummus and anyways check me out my name pierce lorem bingus waffle fries and hummus and anyways check me out my name pierce lorem bingus waffle fries and hummus and anyways check me out my name pierce lorem bingus waffle fries and hummus and anyways check me out my name pierce lorem bingus waffle fries and hummus and anyways check me out my name pierce lorem bingus waffle fries and hummus and anyways check me out my name pierce lorem bingus waffle fries and hummus and anyways check me out my name pierce lorem bingus waffle fries and hummus and anyways check me out my name pierce lorem bingus waffle fries and hummus and anyways check me out my name pierce "
+        `Welcome to the 25th annual Science Fair Chili Cook-Off! In this one-of-a-kind competition, scientists and chefs from around the world synthesize chili using cutting-edge technology and emperimental recipes that are sure to blow your mind.<br><br><span class='quote'>"Sometimes, making chili is more of a science than an art."</span><br><span class='author'>-Albert C.</span><br><br><span class='quote'>"Last year's fibonacci chili sure took my tastebuds for a spin!"</span><br><span class='author'>-Steven B.</span>`
     }))
     content.appendChild(video)
     

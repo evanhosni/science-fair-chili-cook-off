@@ -14,13 +14,21 @@
     }
 }
 
+.quote {
+    font-style: italic;
+    font-size: large;
+}
+
+.author {
+    font-size: large;
+}
+
 @media screen and (min-width: 1440px) {
     #about {
         div {
             flex-direction: row;
             justify-content: space-around;
             p {
-                text-align: right;
                 width: 50%;
             }
             div {

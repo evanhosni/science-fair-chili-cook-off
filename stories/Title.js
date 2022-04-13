@@ -14,10 +14,9 @@ export const createTitle = () => {
     const logo = document.createElement('img')
     logo.src = sfcco_logo
     logo.alt = 'chili pot with bubbles logo'
-    logo.id = "logo"
 
     const h1 = document.createElement('h1')
-    h1.innerHTML = 'Science Fair<br><span id="title-chili">Chili</span><br>Cook-Off'
+    h1.innerHTML = '<span id="title-science-fair">Science Fair</span><br><span id="title-chili">Chili</span><br><span id="title-cook-off">COOK-OFF</span>'
 
     const h3 = document.createElement('h3')
     h3.innerText = '2022'
@@ -39,7 +38,7 @@ export const createTitle = () => {
     window.addEventListener('scroll', () => {
         let offset = window.pageYOffset;
         title.style.backgroundPositionY = offset * 0.6 + 'px';
-        titleContainer.style.paddingTop = 18 + offset * 0.04 + 'vh';
+        titleContainer.style.paddingTop = 0 + offset * 0.04 + 'vh';
     })
 
     return title
