@@ -19,8 +19,8 @@
 }
 
 .navlink--navbar:hover {
-  color: #faec6f;
-  border-bottom: 3px solid #faec6f;
+  color: #ffe15b;
+  border-bottom: 3px solid #ffe15b;
   padding: 10px 15px;
 }
 
@@ -32,20 +32,22 @@
 }
 
 .navlink--footer:hover {
-  color: #faec6f;
+  color: #ffe15b;
 }
 
 h1 {
   color: #fcffd3;
   font-size: xx-large;
+  text-align: center;
 }
 
 h2 {
   color: #fcffd3;
   margin: auto;
+  text-align: center;
 }
 
-p {
+p, label, button {
   color: #fcffd3;
   font-size: larger;
 }
@@ -94,6 +96,8 @@ p {
 .microscope {
   position: absolute;
   border: 3px solid black;
+  -webkit-box-shadow: black 0 0 15px;
+          box-shadow: black 0 0 15px;
   border-radius: 50%;
   cursor: none;
   width: 20vw;
@@ -112,6 +116,31 @@ p {
   }
 }
 
+label, button {
+  color: white;
+  font-size: x-large;
+}
+
+input {
+  border-radius: 20px;
+  border: none;
+  font-size: large;
+  padding: 2px 10px;
+  margin: 5px;
+}
+
+button {
+  font-size: larger;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: solid black 2px;
+  background-color: #aaaaaa;
+  color: black;
+  -webkit-box-shadow: #000000 0 0 5px;
+          box-shadow: #000000 0 0 5px;
+  margin: 10px 0;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,13 +155,16 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #742f2d;
   position: fixed;
   z-index: 2;
   width: 100%;
   min-height: 80px;
-  -webkit-box-shadow: black 0 0 25px;
-          box-shadow: black 0 0 25px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: background-color 0.5s, -webkit-box-shadow 0.5s;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  transition: background-color 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 
 #title {
@@ -224,7 +256,7 @@ section div {
           flex-direction: column-reverse;
 }
 
-#about div p {
+#about div p, #about div label, #about div button {
   text-align: center;
   width: 80%;
 }
@@ -242,7 +274,7 @@ section div {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  #about div p {
+  #about div p, #about div label, #about div button {
     text-align: right;
     width: 50%;
   }
@@ -275,33 +307,62 @@ section div {
   }
 }
 
-#rsvp div {
-  max-width: 1500px;
+#rsvp {
+  padding-left: 0;
+  padding-right: 0;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#rsvp div #form {
-  text-align: center;
-  width: 80%;
+#rsvp #form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#rsvp #form div {
+  padding: 10% 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+#rsvp #form input {
+  margin: 0 10px;
+}
+
+#rsvp #map {
+  padding: 0;
+  margin: 0;
+}
+
+#rsvp #map iframe {
+  max-height: 400px;
 }
 
 @media screen and (min-width: 1440px) {
-  #rsvp div {
+  #rsvp {
+    padding-left: 15%;
+    padding-right: 15%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  #rsvp div #form {
-    width: 50%;
-  }
-  #rsvp div div {
-    width: 50%;
+  #rsvp #form div {
+    margin: inherit;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 

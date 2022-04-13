@@ -1,29 +1,37 @@
+import { createButton } from './components/Button';
 import { createHeader } from './components/Header';
-// import { createParagraph } from './components/Paragraph';
+import { createInput } from './components/Input';
 import './styles/style.css';
 
 export const createRSVP = () => {
     const rsvp = document.createElement('section')
     rsvp.id = 'rsvp'
-    rsvp.appendChild(createHeader({ text: 'RSVP' }))
 
-    const content = document.createElement('div')
-    const form = document.createElement('div')
-    form.id = 'form'
-    form.innerHTML = `<form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit">
-    </form>`
+    const formContainer = document.createElement('div')
+    formContainer.id = "form"
 
-    const map = document.createElement('div')
-    map.id = 'map'
+    const form = document.createElement('form')    
+    form.appendChild(createInput({ id: 'name', labelText: 'Name:' }))
+    form.appendChild(createInput({ id: 'email', labelText: 'Email:' }))
 
-    content.appendChild(form)
-    content.appendChild(map)
-    rsvp.appendChild(content)
+    formContainer.appendChild(createHeader({ text: 'RSVP' }))
+    formContainer.appendChild(form)
+    formContainer.appendChild(createButton({ text: 'Submit' }))
+
+    const mapContainer = document.createElement('div')
+    mapContainer.id = 'map'
+    mapContainer.innerHTML = `<iframe
+        width="600"
+        height="450"
+        style="border:0; border-radius: 10px; box-shadow: black 0 0 25px"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=${process.env.API_KEY}&q=Santiago,Chile">
+    </iframe>`
+
+    rsvp.appendChild(formContainer)
+    rsvp.appendChild(mapContainer)
 
     return rsvp;
 }

@@ -28,6 +28,5 @@
     "@storybook/html": "^6.5.0-alpha.60",
     "@storybook/manager-webpack4": "^6.5.0-alpha.60",
     "babel-loader": "^8.2.4"
-  },
-  "dependencies": {}
+  }
 }

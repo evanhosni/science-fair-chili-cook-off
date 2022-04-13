@@ -1,24 +1,37 @@
 #rsvp {
-    div {
-        max-width: 1500px;
-        flex-direction: column-reverse;
-        #form {
-            text-align: center;
-            width: 80%;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    #form {
+        flex-direction: column;
+        div {
+            padding: 10% 0;
+            flex-direction: column;
+            margin: auto;
+        }
+        input {
+            margin: 0 10px;
+        }
+    }
+    #map {
+        padding: 0;
+        margin: 0;
+        iframe {
+            max-height: 400px;
         }
     }
 }
 
 @media screen and (min-width: 1440px) {
     #rsvp {
-        div {
-            flex-direction: row;
-            justify-content: space-around;
-            #form {
-                width: 50%;
-            }
+        padding-left: 15%;
+        padding-right: 15%;
+        flex-direction: row;
+        align-items: flex-start;
+        #form {
             div {
-                width: 50%;
+                margin: inherit;
+                flex-direction: row;
             }
         }
     }
